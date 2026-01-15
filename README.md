@@ -20,6 +20,7 @@ Este projeto foi desenvolvido como atividade avaliativa do **Curso de React do I
 ## Tecnologias Utilizadas
 
 - React
+- Vite
 - JavaScript (ES6+)
 - HTML5
 - CSS3
@@ -29,10 +30,10 @@ Este projeto foi desenvolvido como atividade avaliativa do **Curso de React do I
 
 ## Repositório
 
-- https://github.com/ftjar/p1-react-gestao-de-atividades
+- https://github.com/ftjar/projeto01-react-gestao-de-atividades
 
 ---
 
 ## Histórico de Commits
 
-- https://github.com/ftjar/p1-react-gestao-de-atividades/commits/main
+- https://github.com/ftjar/projeto01-react-gestao-de-atividades/commits/main
