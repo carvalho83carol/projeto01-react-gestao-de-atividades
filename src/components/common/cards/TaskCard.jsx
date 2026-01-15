@@ -6,12 +6,15 @@ import styles from './TaskCard.module.css';
  * @property {string} category
  * @property {string} priorityLevel
  * @property {string} status
+ * @property {string} description
+ * @property {boolean} isOpen
+ * @property {function} onDetailsClick
  */
 
 /**
  * @param {TaskCardProps} props
  */
-export function TaskCard({ title, category, priorityLevel, status }) {
+export function TaskCard({ title, category, priorityLevel, status, description, isOpen, onDetailsClick }) {
     const isHighPriority = priorityLevel === 'Alta';
     const isCompleted = status === 'Concluído';
     const shouldShowUrgent = isHighPriority && !isCompleted;
@@ -25,8 +28,23 @@ export function TaskCard({ title, category, priorityLevel, status }) {
             <p>Nível de Prioridade: {priorityLevel}</p>
             <p>Status: {status}</p>
 
-            {shouldShowUrgent && (
-                <span className={styles['urgent-label']}>⚠️ Urgente</span>
+            <div className={styles['urgent-container']}>
+                {shouldShowUrgent && (
+                    <span className={styles['urgent-label']}>⚠️ Urgente</span>
+                )}
+            </div>
+
+            <button
+                className={styles['details-button']}
+                onClick={onDetailsClick}
+            >
+                {isOpen ? 'Ocultar Detalhes' : 'Ver Detalhes'}
+            </button>
+
+            {isOpen && (
+                <div className={styles['description-container']}>
+                    <p className={styles['description-text']}>{description}</p>
+                </div>
             )}
         </div>
     );
