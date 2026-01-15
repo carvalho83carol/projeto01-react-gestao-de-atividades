@@ -2,13 +2,21 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px;
-    margin: 10px 0;
     background-color: #f9f9f9;
+    width: 300px;
+    flex: 0 0 auto;
 }
 
 .task-card.high-priority {
     border-color: #e74c3c;
     background-color: #fdecea;
+}
+
+.urgent-container {
+    height: 24px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 .task-card .urgent-label {
@@ -18,5 +26,32 @@
     padding: 2px 6px;
     border-radius: 3px;
     font-size: 12px;
-    margin-top: 10px;
+}
+
+.task-card .details-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.task-card .details-button:hover {
+    background-color: #0056b3;
+}
+
+.description-container {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.description-text {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.5;
 }
