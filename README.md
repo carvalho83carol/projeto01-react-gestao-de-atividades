@@ -3,7 +3,7 @@
 **Curso de React — IFMG**
 
 ---
-
+https://github.com/carvalho83carol
 ## Autores
 
 - Leonardo V. M. Oliveira
@@ -30,10 +30,10 @@ Este projeto foi desenvolvido como atividade avaliativa do **Curso de React do I
 
 ## Repositório
 
-- https://github.com/ftjar/projeto01-react-gestao-de-atividades
+- https://github.com/carvalho83carol/projeto01-react-gestao-de-atividades
 
 ---
 
 ## Histórico de Commits
 
-- https://github.com/ftjar/projeto01-react-gestao-de-atividades/commits/main
+- https://github.com/carvalho83carol/projeto01-react-gestao-de-atividades/commits/main
